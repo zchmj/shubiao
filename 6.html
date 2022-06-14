@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script src="./jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+    var arr = [1,2,[4,5,6],7,8,9];
+    var sum = 0;
+    for(var i = 0;i < arr.length;i++){
+    //    console.log(arr[i])
+       if(Array.isArray(arr[i])){
+            for(var j = 0;j < arr[i].length;j++){
+                sum+=arr[i][j];
+            }
+       }else{
+           sum+=arr[i];
+       }
+
+    }
+    console.log(sum)
+    </script>
+    <script>
+
+
+
+    
+        
+    </script>
+</body>
+</html>

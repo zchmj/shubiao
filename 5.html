@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="get()">切换颜色</button><br><br>
+        <div id="color" style="background:red;width: 300px;height: 300px;"></div>
+    </div>
+    <script>
+    var arr=['pink','green','blue','yellow','orange'];
+    var a=0
+    function get(){
+       var color=document.getElementById('color');
+       color.style.backgroundColor=arr[a];
+       console.log(a);
+       a++;
+       if(a>4){
+           a=0;
+       } 
+    }    
+    </script>
+</body>
+</html>
